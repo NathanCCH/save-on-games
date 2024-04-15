@@ -15,7 +15,7 @@ export default function Navbar() {
   };
   return (
     <nav className="bg-pp-logo p-1 flex justify-between items-center opacity-1">
-      <div className="flex items-center pl-2">
+      <div className="flex items-center pl-8">
         <Image
           src={logoImage}
           alt="Save-On-Games Logo"

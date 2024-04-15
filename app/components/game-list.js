@@ -21,9 +21,9 @@ export default function GameList() {
   useEffect(() => {
     fetchGames(); // Fetch data when the component mounts
   }, []);
-
+  
   return (
-    <ul className="pt-5 grid grid-cols-1 gap-6 sm:grid-cols-4 lg:grid-cols-10">
+    <ul className="mx-10 pt-5 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-full">
       {games.map((game) => (
         <Game
           key={game.steamAppID}

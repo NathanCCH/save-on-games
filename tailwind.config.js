@@ -13,8 +13,19 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       backgroundColor: {
-        'pp-logo': '#271044', // Your custom color
+        'pp-logo': '#011826', // Your custom color
+        'pp-main':'#023859',
+        'pp-card':'#687D73',
+        'pp-hover':'#8EA98E',
       },
+      dropShadow: {
+        'game': '0 25px 25px rgba(0, 0, 0, 0.1)', // Your custom value
+        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '4xl': [
+            '0 35px 35px rgba(0, 0, 0, 0.25)',
+            '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ]
+      }
     },
   },
   plugins: [],
