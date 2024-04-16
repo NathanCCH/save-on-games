@@ -2,7 +2,7 @@
 export default function Game({ thumb, title, salePrice, normalPrice, steamRatingPercent }) {
   return (
       <li className="flex items-center bg-pp-card p-2 rounded-md overflow-clip shadow-2xl hover:bg-pp-hover hover:ring">
-          <img src={thumb} alt={title} className="mx-2 rounded-md max-h-28 min-h-12 shadow-2xl" />
+          <img src={thumb} alt={title} className="mx-2 rounded-md max-h-28 max-w-32 min-h-12 shadow-2xl" />
           <div className="mx-auto my-auto flex-grow text-right pr-2">
             <h2 className="text-sm font-black ">{title}</h2>
             <div className="mt-1">
