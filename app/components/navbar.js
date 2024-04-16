@@ -21,7 +21,7 @@ export default function Navbar() {
           alt="Save-On-Games Logo"
           width={140}
           height={140}
-          className='rounded-full'
+          className='rounded-full m-2'
         />
         <Image
           src={menuIcon}
