@@ -16,7 +16,7 @@ module.exports = {
         'pp-logo': '#011826', // Your custom color
         'pp-main':'#023859',
         'pp-card':'#1b94b5',
-        'pp-hover':'#24c2ed',
+        'pp-hover':'#21b3db',
       },
       dropShadow: {
         'game': '0 25px 25px rgba(0, 0, 0, 0.1)', // Your custom value
