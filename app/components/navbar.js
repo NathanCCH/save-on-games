@@ -3,9 +3,7 @@
 import React from 'react';
 import { useState } from 'react';
 import logoImage from '../images/logo.jpg';
-import menuIcon from '../images/icon-menu.png';
 import Image from 'next/image'
-import Sidebar from "./sidebar";
 
 export default function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -15,7 +13,7 @@ export default function Navbar() {
   };
   return (
     <nav className="bg-pp-logo p-1 flex justify-between items-center opacity-1">
-      <div className="flex items-center pl-8">
+      <div className="flex items-center px-8">
         <Image
           src={logoImage}
           alt="Save-On-Games Logo"
@@ -23,17 +21,6 @@ export default function Navbar() {
           height={140}
           className='rounded-full m-2'
         />
-        <Image
-          src={menuIcon}
-          alt=""
-          width={40}
-          height={40}
-          className='pl-4'
-          onClick={handleSidebarToggle}
-        />
-        <div>
-        {sidebarOpen && <Sidebar />}
-        </div>
       </div>
       <h1 class="text-2xl font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-5xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Save </span>On Games</h1>
       <div className="flex items-center space-x-6 pr-5">
