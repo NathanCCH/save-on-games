@@ -1,8 +1,11 @@
 import Image from 'next/image'
 
 export default function Game({ thumb, title, salePrice, normalPrice, steamRatingPercent }) {
+  // Determine the background color
+  const bgColor = parseFloat(salePrice) < parseFloat(normalPrice) ? 'bg-pp-card' : 'bg-orange-400';
+
   return (
-      <li className="flex items-center bg-pp-card p-2 rounded-md overflow-clip shadow-2xl border-solid border-2 border-sky-300 hover:bg-pp-hover hover:ring">
+      <li className={`flex items-center ${bgColor} p-2 rounded-md overflow-clip shadow-2xl border-solid border-2 border-sky-300 hover:bg-pp-hover hover:ring`}>
           <img 
             src={thumb} 
             alt={title} 
